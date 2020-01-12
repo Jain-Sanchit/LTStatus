@@ -60,6 +60,13 @@ var d = document.getElementById("thedropdownD");
 var t = document.getElementById("thedropdownT");
 
 
-function ltDisplay(){
-    document.getElementById('Display').innerHTML = "<p><h1>"+ freeLt[d.options[d.selectedIndex].value][t.options[t.selectedIndex].value] + "</h1></p>";
+if (d == 3) {
+  document.getElementById("TimeS");
+}
+function ltDisplay() {
+    console.log(d.options[d.selectedIndex].value);
+  document.getElementById("Display").innerHTML =
+    "<p><h1>" +
+    freeLt[d.options[d.selectedIndex].value][t.options[t.selectedIndex].value] +
+    "</h1></p>";
 }
